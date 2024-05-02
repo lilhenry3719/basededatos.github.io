@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Inicio de sesion</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="IMAGENES/img1.jpg" alt="">
+      </div>
+      <div class="back">
+        <img class="backImg" src="IMAGENES/img2.jpg" alt="">
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Inicio de sesion </div>
+            <form action="inicio.php" method="POST">
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="fas fa-envelope"></i>
+                  <input type="text" name="usuario" placeholder="Escribe tu nombre de usuario" required>
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" name="contrasena" placeholder="Escribe tu contraseña" required>
+                </div>
+                <div class="button input-box">
+                  <input type="submit" value="Iniciar sesion">
+              </div>
+              <div class="text sign-up-text">¿No tienes una cuenta aun? <label for="flip">Registrarse ahora</label></div>
+            </div>
+        </form>
+      </div>
+  
+      
+
+        <div class="signup-form">
+          <div class="title">Registrarse</div>
+        <form action="IDS.php"  method="POST">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" name="email" placeholder="Escibe tu Correo electronico" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="contra" placeholder="Escribe tu contraseña" required>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Registrarse">
+              </div>
+              <div class="text sign-up-text">¿Ya tienes una cuenta? <label for="flip">Inicia sesion ahora</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
